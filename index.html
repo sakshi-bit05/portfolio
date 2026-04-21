@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sakshi Bhoite | Full Stack Developer & AI/ML Enthusiast</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Exo+2:wght@300;400;500;600&family=Share+Tech+Mono&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- ==================== PRELOADER ==================== -->
+  <div id="preloader">
+    <div class="pre-logo">SB</div>
+    <div class="pre-bar-wrap"><div class="pre-bar"></div></div>
+    <div class="pre-text">INITIALIZING...</div>
+  </div>
+
+  <!-- ==================== CUSTOM CURSOR ==================== -->
+  <div id="cursor"></div>
+  <div id="cursor-trail"></div>
+
+  <!-- ==================== CANVAS BACKGROUND ==================== -->
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- ==================== NAVBAR ==================== -->
+  <nav>
+    <a href="#home" class="nav-logo">SAKSHI</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home">HOME</a></li>
+      <li><a href="#about">ABOUT</a></li>
+      <li><a href="#skills">SKILLS</a></li>
+      <li><a href="#education">EDUCATION</a></li>
+      <li><a href="#projects">PROJECTS</a></li>
+      <li><a href="#internship">INTERNSHIP</a></li>
+      <li><a href="#achievements">ACHIEVEMENTS</a></li>
+      <li><a href="#certificates">CERTIFICATES</a></li>
+      <li><a href="#contact">CONTACT</a></li>
+    </ul>
+    <div class="nav-right">
+      <button id="theme-toggle" title="Toggle theme"><i class="fas fa-sun"></i></button>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ==================== HERO ==================== -->
+  <section id="home">
+    <div class="hero-text">
+      <p class="hero-greeting">&gt; HELLO WORLD_</p>
+      <h1 class="hero-name">Hi, I'm <span>Sakshi</span><br>Bhoite</h1>
+      <div class="hero-typed">
+        <span id="typed-text"></span><span class="cursor-blink">|</span>
+      </div>
+      <p class="hero-desc">
+        Aspiring Full Stack Developer and AI/ML Enthusiast, building real-world applications
+        and pushing boundaries at intersection of code and creativity.
+      </p>
+      <div class="hero-btns">
+        <a href="#projects" class="btn btn-primary"><i class="fas fa-rocket"></i> VIEW PROJECTS</a>
+        <a href="#" class="btn btn-outline" id="resumeBtn"><i class="fas fa-download"></i> DOWNLOAD RESUME</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><div class="stat-num">3+</div><div class="stat-label">PROJECTS</div></div>
+        <div class="stat"><div class="stat-num">1</div><div class="stat-label">RESEARCH PAPER</div></div>
+        <div class="stat"><div class="stat-num">7+</div><div class="stat-label">TECH SKILLS</div></div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="profile-ring">
+        <img src="profile.png" alt="Sakshi Bhoite Profile" class="profile-img" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== ABOUT ==================== -->
+  <section id="about">
+    <div class="section-tag">&gt; ABOUT_ME</div>
+    <h2 class="section-title">Who Am I?</h2>
+    <div class="about-text reveal">
+        <p>I am currently pursuing B.Tech in Computer Science and Engineering. I am passionate about full stack development and AI/ML, and I enjoy building real-world applications while continuously improving my technical and problem-solving skills.</p>
+        <p>From building mess management systems to government portals, I thrive on creating solutions that make a difference. My curiosity pushes me to explore the intersection of software engineering and intelligent systems.</p>
+        <div class="about-tags">
+          <span class="tag">AI / ML</span>
+          <span class="tag">Problem Solver</span>
+          <span class="tag">Research</span>
+          <span class="tag">CSE Student</span>
+        </div>
+      </div>
+  </section>
+
+  <!-- ==================== SKILLS ==================== -->
+  <section id="skills">
+    <div class="section-tag">&gt; TECH_STACK</div>
+    <h2 class="section-title">Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-card glass reveal">
+        <div class="skill-icon"><i class="fab fa-python"></i></div>
+        <h4>PYTHON</h4>
+      </div>
+      <div class="skill-card glass reveal">
+        <div class="skill-icon"><i class="fab fa-java"></i></div>
+        <h4>JAVA</h4>
+      </div>
+      <div class="skill-card glass reveal">
+        <div class="skill-icon"><i class="fas fa-code"></i></div>
+        <h4>C / C++</h4>
+      </div>
+      <div class="skill-card glass reveal">
+        <div class="skill-icon"><i class="fab fa-html5"></i></div>
+        <h4>HTML & CSS</h4>
+      </div>
+      <div class="skill-card glass reveal">
+        <div class="skill-icon"><i class="fab fa-js"></i></div>
+        <h4>JAVASCRIPT</h4>
+      </div>
+      <div class="skill-card glass reveal">
+        <div class="skill-icon"><i class="fas fa-database"></i></div>
+        <h4>MYSQL</h4>
+      </div>
+    </div>
+
+    <div class="section-tag soft-tag">&gt; SOFT_SKILLS</div>
+    <div class="soft-grid">
+      <div class="soft-card glass reveal">
+        <div class="s-icon"><i class="fas fa-comments"></i></div>
+        <h4>COMMUNICATION</h4>
+      </div>
+      <div class="soft-card glass reveal">
+        <div class="s-icon"><i class="fas fa-crown"></i></div>
+        <h4>LEADERSHIP</h4>
+      </div>
+      <div class="soft-card glass reveal">
+        <div class="s-icon"><i class="fas fa-users"></i></div>
+        <h4>TEAMWORK</h4>
+      </div>
+      <div class="soft-card glass reveal">
+        <div class="s-icon"><i class="fas fa-puzzle-piece"></i></div>
+        <h4>PROBLEM SOLVING</h4>
+      </div>
+      <div class="soft-card glass reveal">
+        <div class="s-icon"><i class="fas fa-clock"></i></div>
+        <h4>TIME MANAGEMENT</h4>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== EDUCATION ==================== -->
+  <section id="education">
+    <div class="section-tag">&gt; EDUCATION_LOG</div>
+    <h2 class="section-title">Education</h2>
+    <div class="timeline">
+      <div class="tl-item reveal">
+        <div class="tl-dot current"></div>
+        <div class="tl-year">ONGOING</div>
+        <div class="tl-title">B.Tech — Computer Science & Engineering</div>
+        <div class="tl-sub">Rajarambapu Institute of Technology, Islampur</div>
+        <span class="tl-badge active">Currently Pursuing ✦</span>
+      </div>
+      <div class="tl-item reveal">
+        <div class="tl-dot"></div>
+        <div class="tl-year">COMPLETED</div>
+        <div class="tl-title">Diploma in Computer Science Engineering</div>
+        <div class="tl-sub">Polytechnic — Maharashtra</div>
+        <span class="tl-badge">Completed</span>
+      </div>
+      <div class="tl-item reveal">
+        <div class="tl-dot"></div>
+        <div class="tl-year">COMPLETED</div>
+        <div class="tl-title">SSC — Secondary School Certificate</div>
+        <div class="tl-sub">Maharashtra State Board</div>
+        <span class="tl-badge">Completed</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== PROJECTS ==================== -->
+  <section id="projects">
+    <div class="section-tag">&gt; PROJECTS</div>
+    <h2 class="section-title">What I've Built</h2>
+    <div class="projects-grid">
+
+      <div class="project-card glass reveal">
+        <div class="project-num">01</div>
+        <div class="project-icon"><i class="fas fa-utensils"></i></div>
+        <h3 class="project-title">Mess and Stay Finder</h3>
+        <p class="project-desc">A comprehensive web application to manage mess and room for students who stay away from home. Features easy booking system for mess services and accommodation with real-time availability tracking.</p>
+        <div class="tech-stack">
+          <span class="tech">HTML</span>
+          <span class="tech">CSS</span>
+          <span class="tech">JavaScript</span>
+          <span class="tech">MySQL</span>
+        </div>
+        <a href="https://github.com/sakshi-bhoite" class="project-link" target="_blank">
+          <i class="fab fa-github"></i> VIEW ON GITHUB
+        </a>
+      </div>
+
+      <div class="project-card glass reveal">
+        <div class="project-num">02</div>
+        <div class="project-icon"><i class="fas fa-store"></i></div>
+        <h3 class="project-title">Aditya Dairy Website</h3>
+        <p class="project-desc">A modern dairy management system built with MERN stack where users can view products and admin can manage dairy products efficiently with inventory tracking and order management.</p>
+        <div class="tech-stack">
+          <span class="tech">MongoDB</span>
+          <span class="tech">Express</span>
+          <span class="tech">React</span>
+          <span class="tech">Node.js</span>
+        </div>
+        <a href="https://github.com/sakshi-bhoite" class="project-link" target="_blank">
+          <i class="fab fa-github"></i> VIEW ON GITHUB
+        </a>
+      </div>
+
+      <div class="project-card glass reveal">
+        <div class="project-num">03</div>
+        <div class="project-icon"><i class="fas fa-landmark"></i></div>
+        <h3 class="project-title">E-Gramseva Portal</h3>
+        <p class="project-desc">A comprehensive government services portal built with MERN stack featuring integrated chatbot for citizen assistance, focusing on digitizing manual documentation processes for rural governance.</p>
+        <div class="tech-stack">
+          <span class="tech">MongoDB</span>
+          <span class="tech">Express</span>
+          <span class="tech">React</span>
+          <span class="tech">Node.js</span>
+          <span class="tech">Chatbot</span>
+        </div>
+        <a href="https://github.com/sakshi-bhoite" class="project-link" target="_blank">
+          <i class="fab fa-github"></i> VIEW ON GITHUB
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== INTERNSHIP & EXPERIENCE ==================== -->
+  <section id="internship">
+    <div class="section-tag">&gt; INTERNSHIP_EXPERIENCE</div>
+    <h2 class="section-title">Internship & Experience</h2>
+    
+    <div class="internship-timeline">
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="internship-card glass">
+            <div class="internship-header">
+              <div class="company-logo">
+                <i class="fas fa-mobile-alt"></i>
+              </div>
+              <div class="company-info">
+                <h3>Appvishwa Software Solutions Pvt. Ltd.</h3>
+                <div class="internship-role">Android Application Development Trainee</div>
+                <div class="internship-duration">
+                  <i class="far fa-calendar"></i> June 2024 - July 2024
+                </div>
+              </div>
+            </div>
+            
+                        
+            <div class="internship-skills">
+              <h4>Skills Gained</h4>
+              <div class="skills-gained">
+                <span class="skill-badge">Android Development</span>
+                <span class="skill-badge">Java Programming</span>
+                <span class="skill-badge">Problem Solving</span>
+                <span class="skill-badge">Team Collaboration</span>
+              </div>
+            </div>
+            
+            <div class="internship-achievements">
+              <h4>Achievements</h4>
+              <ul>
+                <li>Successfully completed the training with excellent participation</li>
+                <li>Recognized for dedication, enthusiasm, and eagerness to learn</li>
+              </ul>
+            </div>
+            
+            <div class="internship-actions">
+              <button class="btn btn-outline cert-btn" onclick="openCertificateModal()">
+                <i class="fas fa-certificate"></i> VIEW CERTIFICATE
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== ACHIEVEMENTS ==================== -->
+  <section id="achievements">
+    <div class="section-tag">&gt; ACHIEVEMENTS</div>
+    <h2 class="section-title">Research & Recognition</h2>
+    <div class="cert-card glass reveal">
+      <div class="cert-header">
+        <div class="cert-seal">📜</div>
+        <div>
+          <div class="cert-title">"Mess and Stay Finder" — Published Research Paper</div>
+          <div class="cert-author">Author: Sakshi Nandkumar Bhoite</div>
+        </div>
+      </div>
+      <div class="cert-divider"></div>
+      <div class="cert-meta">
+        <div class="cert-field">
+          <label>Journal</label>
+          <span>International Journal of Advanced Research in Science, Communication and Technology (IJARSCT)</span>
+        </div>
+        <div class="cert-field">
+          <label>Institute</label>
+          <span>Rajarambapu Institute of Technology, Islampur</span>
+        </div>
+        <div class="cert-field">
+          <label>Publication</label>
+          <span>Volume 5, Issue 7 — March 2025</span>
+        </div>
+        <div class="cert-field">
+          <label>ISSN</label>
+          <span>2581-9429</span>
+        </div>
+        <div class="cert-field">
+          <label>DOI</label>
+          <span class="cert-doi">10.48175/IJARSCT-24472</span>
+        </div>
+        <div class="cert-field">
+          <label>Certificate No.</label>
+          <span>032025-A2286</span>
+        </div>
+      </div>
+      <div class="cert-stamp">VERIFIED ✦ PUBLISHED ✦ CERTIFIED</div>
+    </div>
+  </section>
+
+  <!-- ==================== CONTACT ==================== -->
+  <section id="contact">
+    <div class="section-tag">&gt; CONTACT</div>
+    <h2 class="section-title">Get In Touch</h2>
+    <div class="contact-wrap">
+      <div class="contact-info reveal-left">
+        <h3>LET'S CONNECT</h3>
+        <p>I'm open to internship opportunities, freelance projects, collaborations, and placement opportunities. Feel free to reach out!</p>
+        <div class="social-links">
+          <a href="https://github.com/sakshi-bhoite" target="_blank" title="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/sakshi-bhoite528758252" target="_blank" title="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </div>
+      </div>
+      <div class="reveal-right">
+        <form class="contact-form" id="contactForm">
+          <div class="form-group">
+            <input type="text" placeholder="YOUR NAME" required/>
+          </div>
+          <div class="form-group">
+            <input type="email" placeholder="YOUR EMAIL" required/>
+          </div>
+          <div class="form-group">
+            <input type="text" placeholder="SUBJECT"/>
+          </div>
+          <div class="form-group">
+            <textarea rows="5" placeholder="YOUR MESSAGE" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary submit-full">
+            <i class="fas fa-paper-plane"></i> SEND MESSAGE
+          </button>
+          <div class="form-success" id="formSuccess">
+            <i class="fas fa-check-circle"></i>
+            MESSAGE RECEIVED. I'LL BE IN TOUCH!
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CERTIFICATES ==================== -->
+  <section id="certificates">
+    <div class="section-tag">&gt; CERTIFICATES</div>
+    <h2 class="section-title">Certifications & Achievements</h2>
+    <div class="certificates-grid">
+      <div class="certificate-item glass reveal">
+        <div class="cert-icon">
+          <i class="fas fa-certificate"></i>
+        </div>
+        <div class="cert-info">
+          <h3>Android Application Development Training</h3>
+          <p class="cert-issuer">Appvishwa Software Solutions Pvt. Ltd.</p>
+          <p class="cert-date">June 2024 - July 2024</p>
+          <div class="cert-status">COMPLETED</div>
+        </div>
+        <div class="cert-actions">
+          <button class="btn btn-outline cert-btn" onclick="openCertificateModal()">
+            <i class="fas fa-eye"></i> VIEW
+          </button>
+        </div>
+      </div>
+      
+          </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer>
+    <div class="footer-logo">SAKSHI</div>
+    <div class="footer-copy">© 2025 Sakshi Nandkumar Bhoite</div>
+  </footer>
+
+  <!-- ==================== CERTIFICATE MODAL ==================== -->
+  <div id="certificateModal" class="modal">
+    <div class="modal-content glass">
+      <div class="modal-header">
+        <h3>Internship Certificate</h3>
+        <button class="modal-close" onclick="closeCertificateModal()">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="certificate-gallery" id="certificateGallery">
+          <div class="gallery-main">
+            <img id="mainImage" src="c1.jpg" alt="Certificate Image" />
+          </div>
+          <div class="gallery-thumbnails">
+            <img src="c1.jpg" alt="Certificate 1" class="thumb active" onclick="showImage('c1.jpg')" />
+            <img src="c2.jpg" alt="Certificate 2" class="thumb" onclick="showImage('c2.jpg')" />
+            <img src="c3.jpg" alt="Certificate 3" class="thumb" onclick="showImage('c3.jpg')" />
+          </div>
+                  </div>
+        <div class="modal-actions">
+          <button class="btn btn-primary" onclick="downloadCertificate()">
+            <i class="fas fa-download"></i> DOWNLOAD CERTIFICATE
+          </button>
+          <button class="btn btn-outline" onclick="closeCertificateModal()">
+            <i class="fas fa-times"></i> CLOSE
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
