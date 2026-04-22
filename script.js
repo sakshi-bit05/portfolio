@@ -4,17 +4,16 @@
    ============================================================ */
 
 /* ==================== PRELOADER ==================== */
+// Preloader disabled for faster loading
 const hidePreloader = () => {
   const preloader = document.getElementById('preloader');
   if (preloader) {
-    preloader.style.opacity = '0';
-    preloader.style.visibility = 'hidden';
-    preloader.classList.add('hide');
+    preloader.style.display = 'none';
   }
 };
 
-document.addEventListener('DOMContentLoaded', hidePreloader);
-window.addEventListener('load', hidePreloader);
+// Hide preloader immediately
+hidePreloader();
 
 /* ==================== CANVAS PARTICLE BACKGROUND ==================== */
 const canvas = document.getElementById('bg-canvas');
