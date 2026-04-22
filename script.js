@@ -253,6 +253,11 @@ contactForm.addEventListener('submit', function (e) {
   formSuccess.style.display = 'block';
 });
 
+/* ==================== GITHUB PROFILE ==================== */
+function openGitHubProfile() {
+  window.open('https://github.com/sakshi-bit05', '_blank');
+}
+
 /* ==================== CERTIFICATE VIEW ==================== */
 function viewCertificate(type) {
   if (type === 'android') {
