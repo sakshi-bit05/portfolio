@@ -312,6 +312,28 @@ section {
 }
 .reveal.visible { opacity: 1; transform: translateY(0); }
 
+/* Remove opacity transitions from images specifically */
+.reveal img,
+.reveal-left img,
+.reveal-right img {
+  opacity: 1 !important;
+  transition: transform 0.7s ease !important;
+}
+
+/* Ensure all images load instantly */
+img {
+  opacity: 1 !important;
+}
+
+/* Remove any opacity transitions from all images */
+.project-image img,
+.profile-img,
+.hero-visual img,
+.certificate-item img {
+  opacity: 1 !important;
+  transition: transform 0.3s ease, filter 0.3s ease !important;
+}
+
 .reveal-left {
   opacity: 0;
   transform: translateX(-40px);

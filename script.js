@@ -181,13 +181,21 @@ setTimeout(typeLoop, 1000);
 const revealObserver = new IntersectionObserver(entries => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
-      entry.target.classList.add('visible');
+      // Skip images to prevent opacity animations
+      if (entry.target.tagName.toLowerCase() !== 'img') {
+        entry.target.classList.add('visible');
+      }
     }
   });
 }, { threshold: 0.15 });
 
 document.querySelectorAll('.reveal, .reveal-left, .reveal-right')
-  .forEach(el => revealObserver.observe(el));
+  .forEach(el => {
+    // Don't observe images for reveal animations
+    if (el.tagName.toLowerCase() !== 'img') {
+      revealObserver.observe(el);
+    }
+  });
 
 /* ==================== SKILL BAR ANIMATION ==================== */
 const skillObserver = new IntersectionObserver(entries => {
