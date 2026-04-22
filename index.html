@@ -81,7 +81,7 @@
     <div class="section-tag">&gt; ABOUT_ME</div>
     <h2 class="section-title">Who Am I?</h2>
     <div class="about-text reveal">
-        <p>I am currently pursuing B.Tech in Computer Science and Engineering. I am passionate about full stack development and AI/ML, and I enjoy building real-world applications while continuously improving my technical and problem-solving skills.</p>
+        <p>I am currently pursuing B.Tech in Computer Science and Engineering as a second-year student. I am passionate about full stack development and AI/ML, and I enjoy building real-world applications while continuously improving my technical and problem-solving skills.</p>
         <p>From building mess management systems to government portals, I thrive on creating solutions that make a difference. My curiosity pushes me to explore the intersection of software engineering and intelligent systems.</p>
         <div class="about-tags">
           <span class="tag">AI / ML</span>
@@ -164,7 +164,7 @@
         <div class="tl-dot"></div>
         <div class="tl-year">COMPLETED</div>
         <div class="tl-title">Diploma in Computer Science Engineering</div>
-        <div class="tl-sub">Polytechnic — Maharashtra</div>
+        <div class="tl-sub">Polytechnic Rajarambapu Institute of Technology Rajaramnagar</div>
         <span class="tl-badge">Completed</span>
       </div>
       <div class="tl-item reveal">
@@ -374,6 +374,7 @@
     </div>
   </section>
 
+  
   <!-- ==================== CERTIFICATES ==================== -->
   <section id="certificates">
     <div class="section-tag">&gt; CERTIFICATES</div>
@@ -390,13 +391,63 @@
           <div class="cert-status">COMPLETED</div>
         </div>
         <div class="cert-actions">
-          <button class="btn btn-outline cert-btn" onclick="openCertificateModal()">
+          <button class="btn btn-outline cert-btn" onclick="viewCertificate('android')">
             <i class="fas fa-eye"></i> VIEW
           </button>
         </div>
       </div>
-      
-          </div>
+
+      <div class="certificate-item glass reveal">
+        <div class="cert-icon">
+          <i class="fas fa-code"></i>
+        </div>
+        <div class="cert-info">
+          <h3>C Programming Certificate</h3>
+          <p class="cert-issuer">Online Learning Platform</p>
+          <p class="cert-date">2023</p>
+          <div class="cert-status">COMPLETED</div>
+        </div>
+        <div class="cert-actions">
+          <button class="btn btn-outline cert-btn" onclick="viewCertificate('c')">
+            <i class="fas fa-eye"></i> VIEW
+          </button>
+        </div>
+      </div>
+
+      <div class="certificate-item glass reveal">
+        <div class="cert-icon">
+          <i class="fas fa-laptop-code"></i>
+        </div>
+        <div class="cert-info">
+          <h3>C++ Programming Certificate</h3>
+          <p class="cert-issuer">Online Learning Platform</p>
+          <p class="cert-date">2023</p>
+          <div class="cert-status">COMPLETED</div>
+        </div>
+        <div class="cert-actions">
+          <button class="btn btn-outline cert-btn" onclick="viewCertificate('cpp')">
+            <i class="fas fa-eye"></i> VIEW
+          </button>
+        </div>
+      </div>
+
+      <div class="certificate-item glass reveal">
+        <div class="cert-icon">
+          <i class="fab fa-java"></i>
+        </div>
+        <div class="cert-info">
+          <h3>Java Programming Certificate</h3>
+          <p class="cert-issuer">Online Learning Platform</p>
+          <p class="cert-date">2023</p>
+          <div class="cert-status">COMPLETED</div>
+        </div>
+        <div class="cert-actions">
+          <button class="btn btn-outline cert-btn" onclick="viewCertificate('java')">
+            <i class="fas fa-eye"></i> VIEW
+          </button>
+        </div>
+      </div>
+    </div>
   </section>
 
   <!-- ==================== FOOTER ==================== -->
@@ -405,38 +456,7 @@
     <div class="footer-copy">© 2025 Sakshi Nandkumar Bhoite</div>
   </footer>
 
-  <!-- ==================== CERTIFICATE MODAL ==================== -->
-  <div id="certificateModal" class="modal">
-    <div class="modal-content glass">
-      <div class="modal-header">
-        <h3>Internship Certificate</h3>
-        <button class="modal-close" onclick="closeCertificateModal()">
-          <i class="fas fa-times"></i>
-        </button>
-      </div>
-      <div class="modal-body">
-        <div class="certificate-gallery" id="certificateGallery">
-          <div class="gallery-main">
-            <img id="mainImage" src="c1.jpg" alt="Certificate Image" />
-          </div>
-          <div class="gallery-thumbnails">
-            <img src="c1.jpg" alt="Certificate 1" class="thumb active" onclick="showImage('c1.jpg')" />
-            <img src="c2.jpg" alt="Certificate 2" class="thumb" onclick="showImage('c2.jpg')" />
-            <img src="c3.jpg" alt="Certificate 3" class="thumb" onclick="showImage('c3.jpg')" />
-          </div>
-                  </div>
-        <div class="modal-actions">
-          <button class="btn btn-primary" onclick="downloadCertificate()">
-            <i class="fas fa-download"></i> DOWNLOAD CERTIFICATE
-          </button>
-          <button class="btn btn-outline" onclick="closeCertificateModal()">
-            <i class="fas fa-times"></i> CLOSE
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
-
+  
   <script src="script.js"></script>
 </body>
 </html>

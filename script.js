@@ -253,12 +253,25 @@ contactForm.addEventListener('submit', function (e) {
   formSuccess.style.display = 'block';
 });
 
+/* ==================== CERTIFICATE VIEW ==================== */
+function viewCertificate(type) {
+  if (type === 'android') {
+    window.open('certificate.jpeg', '_blank');
+  } else if (type === 'c') {
+    window.open('c.png', '_blank');
+  } else if (type === 'cpp') {
+    window.open('c++.png', '_blank');
+  } else if (type === 'java') {
+    window.open('java.png', '_blank');
+  }
+}
+
 /* ==================== RESUME DOWNLOAD ==================== */
 document.getElementById('resumeBtn').addEventListener('click', e => {
   e.preventDefault();
   const a    = document.createElement('a');
-  a.href     = 'resume.pdf';
-  a.download = 'Sakshi_Bhoite_Resume.pdf';
+  a.href     = 'resume.docx';
+  a.download = 'Sakshi_Bhoite_Resume.docx';
   a.click();
 });
 
